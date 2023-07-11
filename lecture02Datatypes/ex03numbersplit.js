@@ -1,7 +1,8 @@
 function numberSplit(n) {
-    if (n === 0) return [0, 0];
-    let split = Math.ceil(n / 2);
-    return [Math.min(split, n - split), Math.max(split, n - split)];
+    let x = Math.ceil(n / 2);
+    let y = Math.floor(n / 2);
+    const j= ",";
+    return y+j+x;
    }
    console.log(numberSplit(4)); //[2, 2]
    console.log(numberSplit(10)); //[5, 5]
