@@ -1,13 +1,13 @@
-function numbersSum(arr) {
-    let sum = 0;
+function numbersSum(array) {
+    let x = 0;
   
-    for (let i = 0; i < arr.length; i++) {
-      if (typeof arr[i] === "number" && !isNaN(arr[i])) {
-        sum += arr[i];
+    for (let i = 0; i < array.length; i++) {
+      if (typeof array[i] === "number" && !isNaN(array[i])) {
+        x += array[i];
       }
     }
   
-    return sum;
+    return x;
   }
   
 
