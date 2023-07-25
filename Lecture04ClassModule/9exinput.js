@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 // declare variables
-var name, weight, height, bmi;s
+var name, weight, height, bmi;
 
 // promt user for name, weight and height
 rl.question("Enter your name: ", (answer) => {
