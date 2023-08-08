@@ -1,8 +1,9 @@
 // program to calculate BMI
 //BMI = weight (kg) / (height (m) * height (m))
 
-const readline = require("readline");
-const rl = readline.createInterface({
+//const readline = require("readline");
+//const rl = readline.createInterface({
+const rl = require('readline').createInterface({  
   input: process.stdin,
   output: process.stdout,
 });
