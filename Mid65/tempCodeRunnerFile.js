@@ -1,0 +1,1 @@
+persons[index].budget - (persons[index].budget / arr[index])

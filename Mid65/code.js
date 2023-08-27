@@ -1,5 +1,5 @@
 
-// ! Success
+// 12! Success
 
 // function frequencySort(data) {
 
@@ -13,7 +13,7 @@
 // console.log(frequencySort('cccaaa'));
 // console.log(frequencySort('Aabb'));
 
-// ! Success
+// 16! Success
 
 // function longestValidParentheses(data) {
 
@@ -41,7 +41,7 @@
 // console.log(longestValidParentheses(")()())"));
 // console.log(longestValidParentheses("()))))(()())("));
 
-// * old exam
+// 1* old exam robot
 
 // let arr = [
 
@@ -67,7 +67,7 @@
 // if (arr[walk] == 999) console.log("Win!!!")
 // else console.log("Lose!!!");
 
-// * old exam
+// 2* old exam missing word
 
 // let str = "Hello World";
 // let char = [
@@ -94,7 +94,7 @@
 
 // console.log("Missing Char is : " + char);
 
-// * old exam
+// 3* old exam object total salary
 
 // const persons = [ {
 //     firstName: "John",
@@ -137,7 +137,7 @@
 
 // console.log("Sum of Budget : " + result);
 
-// * old exam
+// * old exam vat
 
 // const persons = [ {
 //     firstName: "John",
