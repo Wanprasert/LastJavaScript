@@ -10,3 +10,8 @@ while (true) {
     if (result.done) break;
     console.log(result.value); // outputs characters one by one
 }
+// H
+// e
+// l
+// l
+// o

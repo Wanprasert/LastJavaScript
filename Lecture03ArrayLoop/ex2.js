@@ -5,3 +5,18 @@ for (let item of furniture) {
     console.log(letter);
   }
 }
+// T
+// a
+// b
+// l
+// e
+// C
+// a
+// i
+// r
+// s
+// C
+// o
+// u
+// c
+// h

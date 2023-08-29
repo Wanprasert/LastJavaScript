@@ -5,3 +5,4 @@ const sum = arrayOfNumbers.reduce((accumulator, currentValue) => {
 });
 
 console.log(sum); // 10
+// 1+2+3+4 = 10

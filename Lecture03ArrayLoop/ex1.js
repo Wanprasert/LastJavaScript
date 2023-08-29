@@ -33,3 +33,4 @@ for (let index = 0; index < values2.length; index++) {
         }
     }
 }
+// values1 and values3 :  Apple

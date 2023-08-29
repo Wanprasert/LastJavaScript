@@ -1,3 +1,3 @@
-for (let char of "test") {
+for (let char of "Hello") {
     console.log(char);
 }

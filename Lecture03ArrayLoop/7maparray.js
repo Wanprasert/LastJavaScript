@@ -5,3 +5,11 @@ const announcements = finalParticipants.map((member) => {
 });
 
 console.log(announcements);
+
+/*[
+    'Taylorjoined the contest.',
+    'Donaldjoined the contest.',
+    'Donjoined the contest.',   
+    'Natashajoined the contest.',
+    'Bobbyjoined the contest.'
+  ]*/
