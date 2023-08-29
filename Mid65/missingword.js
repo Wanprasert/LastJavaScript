@@ -23,3 +23,4 @@ for (let item of str) {
 }
 
 console.log("Missing Char is : " + char);
+//Missing Char is : q,w,t,y,u,i,p,a,s,f,g,h,j,k,z,x,c,v,b,n,m,Q,E,R,T,Y,U,I,O,P,A,S,D,F,G,J,K,L,Z,X,C,V,B,N,M

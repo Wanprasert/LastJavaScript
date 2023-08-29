@@ -40,6 +40,6 @@ for (let person of persons) {
 
 for (let index = 0 ; index < persons.length ; index++) {
 
-    console.log(persons[index].firstName + "\nVax : " + (persons[index].budget * (arr[index] / 100)) + "\n");
+    console.log(persons[index].firstName + "\nVat : " + (persons[index].budget * (arr[index] / 100)) + "\n");
 }
 

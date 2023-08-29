@@ -8,42 +8,51 @@
 //The triplets with the secret letters can overlap.
 // ahe=14, hei=22, ayd=30; a series with a difference of 8.
 
-function getAsciiSum(triplet) {
-    return triplet.split('').reduce((sum, ch) => sum + ch.charCodeAt(0), 0);
+function secretWord(str, len) 
+{
+	var arr = [];
+	var final = [];
+	for (var i = 0; i <= str.length-3; i++)
+	{
+		var ob = {};
+		var sub = str.substring(i,i+3);
+		ob["sub"] = sub[1];
+		var val = sub[0].charCodeAt(0)+sub[1].charCodeAt(0)+sub[2].charCodeAt(0)-288;
+		ob["value"] = val;
+		arr.push(ob);
+	}
+	var values = arr.map(a => a["value"]);
+	for (var i = 0; i < values.length; i++)
+	{
+		var v = values[i];
+		for (var diff = 1; diff < Math.max(...values)-Math.min(...values); diff++)
+		{
+			var ids = [i];
+			var lastId = i+1;
+			var aL = [i+1];
+			for (var j = 1; j < len; j++)
+			{
+				var id = values.slice(lastId).indexOf(v+diff*j);
+				if (id != -1)
+				{
+					lastId += id;
+					ids.push(lastId);
+				}
+			}
+			if (ids.length == len)
+			{
+				final = ids;
+				break;
+			}
+		}
+	}
+	var word = "";
+	for (var i = 0; i < final.length; i++)
+	{
+		word += arr[final[i]]["sub"];	
+	}
+	return word;
 }
-
-function findArithmeticProgression(sums, length) {
-    for (let start = 0; start <= sums.length - length; start++) {
-        let diff = sums[start + 1] - sums[start];
-        let isProgression = true;
-        for (let i = 1; i < length; i++) {
-            if (sums[start + i] + diff !== sums[start + i + 1]) {
-                isProgression = false;
-                break;
-            }
-        }
-        if (isProgression) {
-            return Array.from({ length: length }, (_, i) => start + i);
-        }
-    }
-    return [];
-}
-
-function secretWord(s, length) {
-    let triplets = [];
-    for (let i = 0; i <= s.length - 3; i++) {
-        triplets.push(s.substring(i, i + 3));
-    }
-
-    let sums = triplets.map(getAsciiSum);
-
-    const indices = findArithmeticProgression(sums, length - 1);
-    if (indices.length) {
-        return indices.map(index => triplets[index][1]).join('');
-    }
-    return '';
-}
-
 // Test the function
 console.log(secretWord("sadbpstcrdvaefikkgoenqrt", 5));  // Should return "brake"
 console.log(secretWord("aheiayd", 3));  // Should return "hey"

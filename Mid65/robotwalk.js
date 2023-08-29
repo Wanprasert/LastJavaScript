@@ -9,7 +9,7 @@ let arr = [
 ];
 
 let walk = 31;
-let pattern = ["right" , "right" , "right" , "up" , "up" , "left" , "left" ];
+let pattern = ["right" , "right" , "right" , "up" , "up" , "left" , "left", "left" ];
 
 for (let action of pattern) {
 
@@ -21,3 +21,4 @@ for (let action of pattern) {
 
 if (arr[walk] == 999) console.log("Win!!!")
 else console.log("Lose!!!");
+// win!!!

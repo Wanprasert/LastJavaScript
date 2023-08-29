@@ -6,6 +6,6 @@ function frequencySort(data) {
     return (result);
 }
 
-console.log(frequencySort('tree'));
-console.log(frequencySort('cccaaa'));
-console.log(frequencySort('Aabb'));
+console.log(frequencySort('tree')); //eert
+console.log(frequencySort('cccaaa')); //aaaccc
+console.log(frequencySort('Aabb')); //bbaA
