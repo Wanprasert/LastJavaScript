@@ -25,3 +25,4 @@ const isValidIP = (entry) => {
   console.log(isValidIP('123.45.67.89')); //true
   console.log(isValidIP('123.456.78.90')); //false
   console.log(isValidIP('123.545.067.889')); //false
+  console.log(isValidIP('192.168.0.1')); //false

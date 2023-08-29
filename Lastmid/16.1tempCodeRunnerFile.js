@@ -1,3 +1,4 @@
+
 function longestValidParentheses(data) {
 
     let left = 0 , right = 0;
